@@ -1,13 +1,13 @@
 <template>
   <b-card
-    title="Who is most likely..."
+    title="Who is most likely to..."
     img-src="https://picsum.photos/300/150/"
     img-alt="Image"
     img-top
     tag="article"
     class="mx-auto"
   >
-    <b-card-text>{{ message }}</b-card-text>
+    <b-card-text>...{{ message }}</b-card-text>
 
     <b-button href="#" v-on:click="$emit('next')" variant="primary">Next</b-button>
   </b-card>

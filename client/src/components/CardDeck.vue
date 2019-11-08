@@ -7,15 +7,15 @@
 <script lang="ts">
 import { Component, Prop, Vue } from "vue-property-decorator";
 import Card from "@/components/Card.vue";
-import "@/assets/cards";
-import _ from "underscore";
+import cards from "@/assets/cards";
+import _ from "lodash";
 
 @Component({ components: { Card } })
 export default class CardDeck extends Vue {
   data() {
     return {
       current_card: 0,
-      messages: _.shuffle(["Test1", "Test2", "Test3"]),
+      messages: _.shuffle(cards),
       current_message: "New Game"
     };
   }
